@@ -1,0 +1,85 @@
+
+/*
+* {
+    /*CSS reset, érdemes így kezdeni egy weboldal CSS-megjelenését
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; elem szélességét nem fogja befolyásolni a padding és border
+}
+
+*/
+
+body {
+   color: #242424;
+   /*Mindig több betűtípust adok, mert ha a böngésző nem ismweri az egyiket akkor ugrik a következőre*/
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   padding:0;
+   
+}
+
+.pimg1, .pimg2, .pimg3 {
+    /*ettől csúszik mászik a háttér*/
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 0.7;
+}
+
+.pimg1 {
+    background-image: url(img/image1.jpg);
+    /*viewport-height vh a böngésződnek amit belátsz és annak a magassága, annyira tolja ki max*/
+    min-height: 100vh;
+
+}
+
+.pimg2 {
+    background-image: url(img/image2.jpg);
+    min-height: 400px;
+}
+
+.pimg3 {
+    background: url(img/image3.jpg);
+    min-height: 400px;
+}
+
+article {
+    /*ezekkel a beállításokkal a képernyő közepére rakja a szöveget*/
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    font-size: 27px;
+    text-transform: uppercase;
+    /*betűk között 8 pixel szünetet ad*/
+    letter-spacing: 8px;
+}
+
+.border {
+    background: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+span {
+    color: #fff;
+}
+
+section {
+    text-align: center;
+    /*két értékkel, fent, lent, jobbra , balra adja hozzá*/
+    padding: 50px 150px;
+}
+
+.section-light {
+    background: #f2f2f2;
+    color:#111;
+
+}
+
+.section-dark {
+    background: #242424;
+    color: #f2f2f2;
+}
